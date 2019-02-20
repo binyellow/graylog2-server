@@ -7,12 +7,19 @@ import Routes from 'routing/Routes';
 import AppConfig from 'util/AppConfig';
 
 jest.mock('./SystemMenu', () => mockComponent('SystemMenu'));
+
 jest.mock('./NavigationBrand', () => mockComponent('NavigationBrand'));
+
 jest.mock('./NavigationLink', () => mockComponent('NavigationLink'));
+
 jest.mock('./ScratchpadToggle', () => mockComponent('ScratchpadToggle'));
+
 jest.mock('react-router', () => ({ withRouter: (x) => x }));
+
 jest.mock('components/throughput/GlobalThroughput', () => mockComponent('GlobalThroughput'));
+
 jest.mock('components/navigation/NotificationBadge', () => mockComponent('NotificationBadge'));
+
 jest.mock('util/AppConfig', () => ({
   gl2AppPathPrefix: jest.fn(() => ''),
   gl2ServerUrl: jest.fn(() => undefined),
@@ -37,6 +44,7 @@ describe('Navigation', () => {
     };
 
     jest.doMock('injection/StoreProvider', () => ({ getStore: () => CurrentUserStore }));
+
     // eslint-disable-next-line global-require
     Navigation = require('./Navigation');
   });
@@ -55,7 +63,9 @@ describe('Navigation', () => {
       const brand = wrapper.find('NavbarBrand');
 
       expect(brand).toExist();
+
       expect(brand.find('LinkContainer')).toHaveProp('to', Routes.STARTPAGE);
+
       expect(brand.find('NavigationBrand')).toExist();
     });
 
@@ -63,6 +73,7 @@ describe('Navigation', () => {
       const usermenu = wrapper.find('UserMenu');
 
       expect(usermenu).toHaveProp('loginName', 'slowry');
+
       expect(usermenu).toHaveProp('fullName', 'Sam Lowry');
     });
 
@@ -99,6 +110,7 @@ describe('Navigation', () => {
 
     beforeEach(() => {
       AppConfig.gl2AppPathPrefix = jest.fn(() => '');
+
       PluginStore.register(plugin);
     });
 
