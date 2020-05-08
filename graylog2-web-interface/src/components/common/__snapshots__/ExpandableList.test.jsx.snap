@@ -1,6 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ExpandableList /> should render with a Item 1`] = `
+.c0 {
+  padding: 10px 5px;
+}
+
+.c1 {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.c1 label {
+  min-height: 20px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.c1 label * {
+  cursor: pointer;
+}
+
+.c2 {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.c3.fa-stack {
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 20px;
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+
+.c3.fa-stack:hover [class*="fa-"] {
+  color: #702785;
+  opacity: 1;
+}
+
+.c3 [class*="fa-"]:first-child {
+  opacity: 0;
+}
+
+.c3 [class*="fa-"]:first-child ~ [class*="fa-"]:hover {
+  color: #fff;
+}
+
+.c4 {
+  font-size: 1.125rem;
+}
+
+.c5 {
+  border: 0;
+  padding: 0;
+  text-align: left;
+  background: transparent;
+}
+
+.c6 {
+  border-left: 1px #e6e6e6 solid;
+  margin-left: 35px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
 <ExpandableList>
   <ul
     className="list"
@@ -27,7 +92,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
               "componentStyle": ComponentStyle {
                 "componentId": "ExpandableListItem__ItemWrap-sc-10hsq3a-0",
                 "isStatic": false,
-                "lastClassName": "cTFmIs",
+                "lastClassName": "c0",
                 "rules": Array [
                   [Function],
                 ],
@@ -46,7 +111,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
           padded={true}
         >
           <li
-            className="ExpandableListItem__ItemWrap-sc-10hsq3a-0 cTFmIs"
+            className="c0"
           >
             <ExpandableListItem__Container>
               <StyledComponent
@@ -57,7 +122,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "ExpandableListItem__Container-sc-10hsq3a-1",
                       "isStatic": false,
-                      "lastClassName": "gvIcsL",
+                      "lastClassName": "c1",
                       "rules": Array [
                         [Function],
                       ],
@@ -75,7 +140,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="ExpandableListItem__Container-sc-10hsq3a-1 gvIcsL"
+                  className="c1"
                 >
                   <Checkbox
                     bsClass="checkbox"
@@ -107,7 +172,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "ExpandableListItem__Toggle-sc-10hsq3a-2",
                             "isStatic": false,
-                            "lastClassName": "hwyxtE",
+                            "lastClassName": "c2",
                             "rules": Array [
                               "display:inline-block;width:20px;margin-right:5px;",
                             ],
@@ -125,7 +190,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="ExpandableListItem__Toggle-sc-10hsq3a-2 hwyxtE"
+                        className="c2"
                       >
                         <ExpandableListItem__IconStack
                           className="fa-stack"
@@ -141,7 +206,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ExpandableListItem__IconStack-sc-10hsq3a-3",
                                   "isStatic": false,
-                                  "lastClassName": "jXmspb",
+                                  "lastClassName": "c3",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -161,7 +226,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                             tabIndex={0}
                           >
                             <div
-                              className="ExpandableListItem__IconStack-sc-10hsq3a-3 jXmspb fa-stack"
+                              className="c3 fa-stack"
                               onClick={[Function]}
                               tabIndex={0}
                             >
@@ -221,7 +286,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "ExpandableListItem__HeaderWrap-sc-10hsq3a-4",
                             "isStatic": false,
-                            "lastClassName": "kOLPYP",
+                            "lastClassName": "c4",
                             "rules": Array [
                               [Function],
                             ],
@@ -239,7 +304,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="ExpandableListItem__HeaderWrap-sc-10hsq3a-4 kOLPYP header"
+                        className="c4 header"
                       >
                         <ExpandableListItem__Header
                           onClick={[Function]}
@@ -254,7 +319,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ExpandableListItem__Header-sc-10hsq3a-5",
                                   "isStatic": false,
-                                  "lastClassName": "clUCXq",
+                                  "lastClassName": "c5",
                                   "rules": Array [
                                     "border:0;padding:0;text-align:left;background:transparent;",
                                   ],
@@ -275,7 +340,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                             type="button"
                           >
                             <button
-                              className="ExpandableListItem__Header-sc-10hsq3a-5 clUCXq"
+                              className="c5"
                               onClick={[Function]}
                               tabIndex={0}
                               type="button"
@@ -299,7 +364,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "ExpandableListItem__ExpandableContent-sc-10hsq3a-7",
                       "isStatic": false,
-                      "lastClassName": "gVrSEu",
+                      "lastClassName": "c6",
                       "rules": Array [
                         [Function],
                       ],
@@ -317,7 +382,7 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="ExpandableListItem__ExpandableContent-sc-10hsq3a-7 gVrSEu"
+                  className="c6"
                 />
               </StyledComponent>
             </ExpandableListItem__ExpandableContent>
@@ -330,6 +395,71 @@ exports[`<ExpandableList /> should render with a Item 1`] = `
 `;
 
 exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
+.c0 {
+  padding: 10px 5px;
+}
+
+.c1 {
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.c1 label {
+  min-height: 20px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.c1 label * {
+  cursor: pointer;
+}
+
+.c2 {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.c3.fa-stack {
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 20px;
+  width: 1em;
+  height: 1em;
+  vertical-align: text-top;
+}
+
+.c3.fa-stack:hover [class*="fa-"] {
+  color: #702785;
+  opacity: 1;
+}
+
+.c3 [class*="fa-"]:first-child {
+  opacity: 0;
+}
+
+.c3 [class*="fa-"]:first-child ~ [class*="fa-"]:hover {
+  color: #fff;
+}
+
+.c4 {
+  font-size: 1.125rem;
+}
+
+.c5 {
+  border: 0;
+  padding: 0;
+  text-align: left;
+  background: transparent;
+}
+
+.c6 {
+  border-left: 1px #e6e6e6 solid;
+  margin-left: 35px;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
 <ExpandableList>
   <ul
     className="list"
@@ -356,7 +486,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
               "componentStyle": ComponentStyle {
                 "componentId": "ExpandableListItem__ItemWrap-sc-10hsq3a-0",
                 "isStatic": false,
-                "lastClassName": "cTFmIs",
+                "lastClassName": "c0",
                 "rules": Array [
                   [Function],
                 ],
@@ -375,7 +505,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
           padded={true}
         >
           <li
-            className="ExpandableListItem__ItemWrap-sc-10hsq3a-0 cTFmIs"
+            className="c0"
           >
             <ExpandableListItem__Container>
               <StyledComponent
@@ -386,7 +516,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "ExpandableListItem__Container-sc-10hsq3a-1",
                       "isStatic": false,
-                      "lastClassName": "gvIcsL",
+                      "lastClassName": "c1",
                       "rules": Array [
                         [Function],
                       ],
@@ -404,7 +534,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="ExpandableListItem__Container-sc-10hsq3a-1 gvIcsL"
+                  className="c1"
                 >
                   <Checkbox
                     bsClass="checkbox"
@@ -436,7 +566,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "ExpandableListItem__Toggle-sc-10hsq3a-2",
                             "isStatic": false,
-                            "lastClassName": "hwyxtE",
+                            "lastClassName": "c2",
                             "rules": Array [
                               "display:inline-block;width:20px;margin-right:5px;",
                             ],
@@ -454,7 +584,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                       forwardedRef={null}
                     >
                       <div
-                        className="ExpandableListItem__Toggle-sc-10hsq3a-2 hwyxtE"
+                        className="c2"
                       >
                         <ExpandableListItem__IconStack
                           className="fa-stack"
@@ -470,7 +600,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ExpandableListItem__IconStack-sc-10hsq3a-3",
                                   "isStatic": false,
-                                  "lastClassName": "jXmspb",
+                                  "lastClassName": "c3",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -490,7 +620,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                             tabIndex={0}
                           >
                             <div
-                              className="ExpandableListItem__IconStack-sc-10hsq3a-3 jXmspb fa-stack"
+                              className="c3 fa-stack"
                               onClick={[Function]}
                               tabIndex={0}
                             >
@@ -550,7 +680,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                           "componentStyle": ComponentStyle {
                             "componentId": "ExpandableListItem__HeaderWrap-sc-10hsq3a-4",
                             "isStatic": false,
-                            "lastClassName": "kOLPYP",
+                            "lastClassName": "c4",
                             "rules": Array [
                               [Function],
                             ],
@@ -568,7 +698,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                       forwardedRef={null}
                     >
                       <span
-                        className="ExpandableListItem__HeaderWrap-sc-10hsq3a-4 kOLPYP header"
+                        className="c4 header"
                       >
                         <ExpandableListItem__Header
                           onClick={[Function]}
@@ -583,7 +713,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ExpandableListItem__Header-sc-10hsq3a-5",
                                   "isStatic": false,
-                                  "lastClassName": "clUCXq",
+                                  "lastClassName": "c5",
                                   "rules": Array [
                                     "border:0;padding:0;text-align:left;background:transparent;",
                                   ],
@@ -604,7 +734,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                             type="button"
                           >
                             <button
-                              className="ExpandableListItem__Header-sc-10hsq3a-5 clUCXq"
+                              className="c5"
                               onClick={[Function]}
                               tabIndex={0}
                               type="button"
@@ -628,7 +758,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "ExpandableListItem__ExpandableContent-sc-10hsq3a-7",
                       "isStatic": false,
-                      "lastClassName": "gVrSEu",
+                      "lastClassName": "c6",
                       "rules": Array [
                         [Function],
                       ],
@@ -646,7 +776,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="ExpandableListItem__ExpandableContent-sc-10hsq3a-7 gVrSEu"
+                  className="c6"
                 >
                   <ExpandableList>
                     <ul
@@ -674,7 +804,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ExpandableListItem__ItemWrap-sc-10hsq3a-0",
                                   "isStatic": false,
-                                  "lastClassName": "cTFmIs",
+                                  "lastClassName": "c0",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -693,7 +823,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                             padded={true}
                           >
                             <li
-                              className="ExpandableListItem__ItemWrap-sc-10hsq3a-0 cTFmIs"
+                              className="c0"
                             >
                               <ExpandableListItem__Container>
                                 <StyledComponent
@@ -704,7 +834,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "ExpandableListItem__Container-sc-10hsq3a-1",
                                         "isStatic": false,
-                                        "lastClassName": "gvIcsL",
+                                        "lastClassName": "c1",
                                         "rules": Array [
                                           [Function],
                                         ],
@@ -722,7 +852,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="ExpandableListItem__Container-sc-10hsq3a-1 gvIcsL"
+                                    className="c1"
                                   >
                                     <Checkbox
                                       bsClass="checkbox"
@@ -754,7 +884,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "ExpandableListItem__Toggle-sc-10hsq3a-2",
                                               "isStatic": false,
-                                              "lastClassName": "hwyxtE",
+                                              "lastClassName": "c2",
                                               "rules": Array [
                                                 "display:inline-block;width:20px;margin-right:5px;",
                                               ],
@@ -772,7 +902,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                         forwardedRef={null}
                                       >
                                         <div
-                                          className="ExpandableListItem__Toggle-sc-10hsq3a-2 hwyxtE"
+                                          className="c2"
                                         >
                                           <ExpandableListItem__IconStack
                                             className="fa-stack"
@@ -788,7 +918,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "ExpandableListItem__IconStack-sc-10hsq3a-3",
                                                     "isStatic": false,
-                                                    "lastClassName": "jXmspb",
+                                                    "lastClassName": "c3",
                                                     "rules": Array [
                                                       [Function],
                                                     ],
@@ -808,7 +938,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                               tabIndex={0}
                                             >
                                               <div
-                                                className="ExpandableListItem__IconStack-sc-10hsq3a-3 jXmspb fa-stack"
+                                                className="c3 fa-stack"
                                                 onClick={[Function]}
                                                 tabIndex={0}
                                               >
@@ -868,7 +998,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                             "componentStyle": ComponentStyle {
                                               "componentId": "ExpandableListItem__HeaderWrap-sc-10hsq3a-4",
                                               "isStatic": false,
-                                              "lastClassName": "kOLPYP",
+                                              "lastClassName": "c4",
                                               "rules": Array [
                                                 [Function],
                                               ],
@@ -886,7 +1016,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                         forwardedRef={null}
                                       >
                                         <span
-                                          className="ExpandableListItem__HeaderWrap-sc-10hsq3a-4 kOLPYP header"
+                                          className="c4 header"
                                         >
                                           <ExpandableListItem__Header
                                             onClick={[Function]}
@@ -901,7 +1031,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                                   "componentStyle": ComponentStyle {
                                                     "componentId": "ExpandableListItem__Header-sc-10hsq3a-5",
                                                     "isStatic": false,
-                                                    "lastClassName": "clUCXq",
+                                                    "lastClassName": "c5",
                                                     "rules": Array [
                                                       "border:0;padding:0;text-align:left;background:transparent;",
                                                     ],
@@ -922,7 +1052,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                               type="button"
                                             >
                                               <button
-                                                className="ExpandableListItem__Header-sc-10hsq3a-5 clUCXq"
+                                                className="c5"
                                                 onClick={[Function]}
                                                 tabIndex={0}
                                                 type="button"
@@ -946,7 +1076,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                       "componentStyle": ComponentStyle {
                                         "componentId": "ExpandableListItem__ExpandableContent-sc-10hsq3a-7",
                                         "isStatic": false,
-                                        "lastClassName": "gVrSEu",
+                                        "lastClassName": "c6",
                                         "rules": Array [
                                           [Function],
                                         ],
@@ -964,7 +1094,7 @@ exports[`<ExpandableList /> should render with a nested ExpandableList 1`] = `
                                   forwardedRef={null}
                                 >
                                   <div
-                                    className="ExpandableListItem__ExpandableContent-sc-10hsq3a-7 gVrSEu"
+                                    className="c6"
                                   />
                                 </StyledComponent>
                               </ExpandableListItem__ExpandableContent>

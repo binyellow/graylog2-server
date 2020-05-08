@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ContentPackConstraints /> should render with created constraints 1`] = `
+.c0 {
+  background-color: #ad0707;
+}
+
+.c1 {
+  background-color: #00ae42;
+}
+
 <ContentPackConstraints
   constraints={
     Array [
@@ -163,7 +171,7 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "fBopeI",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -184,17 +192,17 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                             isFulfilled={false}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                              className="c0"
                               isFulfilled={false}
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                className="c0"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                  className="c0"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                    className="c0"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -221,11 +229,11 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                      className="c0"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI badge"
+                                        className="c0 badge"
                                       >
                                         <Icon
                                           name="times"
@@ -289,7 +297,7 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "fBopeI",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -310,17 +318,17 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                             isFulfilled={true}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                              className="c1"
                               isFulfilled={true}
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                className="c1"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                  className="c1"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                    className="c1"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -347,11 +355,11 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                      className="c1"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI badge"
+                                        className="c1 badge"
                                       >
                                         <Icon
                                           name="check"
@@ -393,6 +401,10 @@ exports[`<ContentPackConstraints /> should render with created constraints 1`] =
 `;
 
 exports[`<ContentPackConstraints /> should render with new constraints with forced fulfillment 1`] = `
+.c0 {
+  background-color: #00ae42;
+}
+
 <ContentPackConstraints
   constraints={
     Array [
@@ -549,7 +561,7 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "fBopeI",
+                                  "lastClassName": "c0",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -570,17 +582,17 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                             isFulfilled={true}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                              className="c0"
                               isFulfilled={true}
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                className="c0"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                  className="c0"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                    className="c0"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -607,11 +619,11 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                      className="c0"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI badge"
+                                        className="c0 badge"
                                       >
                                         <Icon
                                           name="check"
@@ -675,7 +687,7 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "fBopeI",
+                                  "lastClassName": "c0",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -696,17 +708,17 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                             isFulfilled={true}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                              className="c0"
                               isFulfilled={true}
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                className="c0"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                  className="c0"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                    className="c0"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -733,11 +745,11 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI"
+                                      className="c0"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 fBopeI badge"
+                                        className="c0 badge"
                                       >
                                         <Icon
                                           name="check"
@@ -779,6 +791,10 @@ exports[`<ContentPackConstraints /> should render with new constraints with forc
 `;
 
 exports[`<ContentPackConstraints /> should render with new constraints without forced fulfillment 1`] = `
+.c0 {
+  background-color: #ad0707;
+}
+
 <ContentPackConstraints
   constraints={
     Array [
@@ -933,7 +949,7 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "veRUI",
+                                  "lastClassName": "c0",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -953,16 +969,16 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                             forwardedRef={null}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                              className="c0"
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                className="c0"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                  className="c0"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                    className="c0"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -989,11 +1005,11 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                      className="c0"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI badge"
+                                        className="c0 badge"
                                       >
                                         <Icon
                                           name="times"
@@ -1055,7 +1071,7 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                                 "componentStyle": ComponentStyle {
                                   "componentId": "ContentPackConstraints__StyledBadge-g7th4-0",
                                   "isStatic": false,
-                                  "lastClassName": "veRUI",
+                                  "lastClassName": "c0",
                                   "rules": Array [
                                     "background-color:",
                                     [Function],
@@ -1075,16 +1091,16 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                             forwardedRef={null}
                           >
                             <Component
-                              className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                              className="c0"
                             >
                               <ForwardRef
-                                className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                className="c0"
                               >
                                 <Badge__StyledBadge
-                                  className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                  className="c0"
                                 >
                                   <StyledComponent
-                                    className="ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                    className="c0"
                                     forwardedComponent={
                                       Object {
                                         "$$typeof": Symbol(react.forward_ref),
@@ -1111,11 +1127,11 @@ exports[`<ContentPackConstraints /> should render with new constraints without f
                                   >
                                     <Badge
                                       bsClass="badge"
-                                      className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI"
+                                      className="c0"
                                       pullRight={false}
                                     >
                                       <span
-                                        className="Badge__StyledBadge-sc-4gzqz0-0 gDhrrS ContentPackConstraints__StyledBadge-g7th4-0 veRUI badge"
+                                        className="c0 badge"
                                       >
                                         <Icon
                                           name="times"

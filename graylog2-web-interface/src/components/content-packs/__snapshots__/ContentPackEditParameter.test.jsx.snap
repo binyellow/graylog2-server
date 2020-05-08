@@ -1,6 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
+.c0 {
+  color: #1f1f1f;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.c1 {
+  color: #1f1f1f;
+  background-color: #fff;
+  border-color: #cdcdcd;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::-moz-placeholder {
+  color: #9b9b9b;
+}
+
+.c1:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::placeholder {
+  color: #9b9b9b;
+}
+
+.c1:focus {
+  border-color: #6386c9;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(99,134,201,0.4);
+}
+
+.c1[disabled],
+.c1[readonly],
+fieldset[disabled] .c1 {
+  background-color: #cdcdcd;
+}
+
+.c1 ~ .form-control-feedback.glyphicon {
+  display: none;
+}
+
+.c2 {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #838383;
+}
+
 <ContentPackEditParameter
   onUpdateParameter={[Function]}
   parameters={
@@ -82,12 +133,12 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="title"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -98,7 +149,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -117,11 +168,11 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="title"
                           >
                             Title
@@ -158,7 +209,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -186,7 +237,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Title"
@@ -199,7 +250,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="title"
                                 label="Title"
                                 maxLength={250}
@@ -222,7 +273,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -241,10 +292,10 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a descriptive title for this content pack.
                               </span>
@@ -315,12 +366,12 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="name"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -331,7 +382,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -350,11 +401,11 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="name"
                           >
                             Name
@@ -391,7 +442,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -419,7 +470,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Name"
@@ -432,7 +483,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="name"
                                 label="Name"
                                 maxLength={250}
@@ -455,7 +506,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -474,10 +525,10 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 This is used as the parameter reference and must not contain a space.
                               </span>
@@ -548,12 +599,12 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="description"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -564,7 +615,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -583,11 +634,11 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="description"
                           >
                             Description
@@ -624,7 +675,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -652,7 +703,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Description"
@@ -665,7 +716,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="description"
                                 label="Description"
                                 maxLength={250}
@@ -688,7 +739,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -707,10 +758,10 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a description explaining what will be done with this parameter.
                               </span>
@@ -781,12 +832,12 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="type"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -797,7 +848,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -816,11 +867,11 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="type"
                           >
                             Value Type
@@ -858,7 +909,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -885,7 +936,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="select"
                               disabled={false}
                               inputRef={[Function]}
@@ -898,7 +949,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                               value="string"
                             >
                               <select
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 disabled={false}
                                 id="type"
                                 label="Value Type"
@@ -942,7 +993,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -961,10 +1012,10 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give the type of the parameter.
                               </span>
@@ -1034,12 +1085,12 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="default_value"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -1050,7 +1101,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1069,11 +1120,11 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="default_value"
                           >
                             Default value
@@ -1109,7 +1160,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1136,7 +1187,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Default value"
@@ -1148,7 +1199,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="default_value"
                                 label="Default value"
                                 maxLength={250}
@@ -1170,7 +1221,7 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1189,10 +1240,10 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a default value if the parameter is not optional.
                               </span>
@@ -1214,6 +1265,57 @@ exports[`<ContentPackEditParameters /> should render a form for creation 1`] = `
 `;
 
 exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
+.c0 {
+  color: #1f1f1f;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.c1 {
+  color: #1f1f1f;
+  background-color: #fff;
+  border-color: #cdcdcd;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::-moz-placeholder {
+  color: #9b9b9b;
+}
+
+.c1:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::placeholder {
+  color: #9b9b9b;
+}
+
+.c1:focus {
+  border-color: #6386c9;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(99,134,201,0.4);
+}
+
+.c1[disabled],
+.c1[readonly],
+fieldset[disabled] .c1 {
+  background-color: #cdcdcd;
+}
+
+.c1 ~ .form-control-feedback.glyphicon {
+  display: none;
+}
+
+.c2 {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #838383;
+}
+
 <ContentPackEditParameter
   onUpdateParameter={[Function]}
   parameterToEdit={
@@ -1304,12 +1406,12 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="title"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -1320,7 +1422,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1339,11 +1441,11 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="title"
                           >
                             Title
@@ -1380,7 +1482,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1408,7 +1510,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Title"
@@ -1421,7 +1523,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                               value="A parameter title"
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="title"
                                 label="Title"
                                 maxLength={250}
@@ -1444,7 +1546,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1463,10 +1565,10 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a descriptive title for this content pack.
                               </span>
@@ -1537,12 +1639,12 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="name"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -1553,7 +1655,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1572,11 +1674,11 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="name"
                           >
                             Name
@@ -1613,7 +1715,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1641,7 +1743,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Name"
@@ -1654,7 +1756,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                               value="A parameter name"
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="name"
                                 label="Name"
                                 maxLength={250}
@@ -1677,7 +1779,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1696,10 +1798,10 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 This is used as the parameter reference and must not contain a space.
                               </span>
@@ -1770,12 +1872,12 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="description"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -1786,7 +1888,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -1805,11 +1907,11 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="description"
                           >
                             Description
@@ -1846,7 +1948,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1874,7 +1976,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Description"
@@ -1887,7 +1989,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                               value="A parameter descriptions"
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="description"
                                 label="Description"
                                 maxLength={250}
@@ -1910,7 +2012,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -1929,10 +2031,10 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a description explaining what will be done with this parameter.
                               </span>
@@ -2003,12 +2105,12 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="type"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -2019,7 +2121,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2038,11 +2140,11 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="type"
                           >
                             Value Type
@@ -2080,7 +2182,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2107,7 +2209,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="select"
                               disabled={true}
                               inputRef={[Function]}
@@ -2120,7 +2222,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                               value="string"
                             >
                               <select
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 disabled={true}
                                 id="type"
                                 label="Value Type"
@@ -2164,7 +2266,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2183,10 +2285,10 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give the type of the parameter.
                               </span>
@@ -2256,12 +2358,12 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="default_value"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -2272,7 +2374,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2291,11 +2393,11 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="default_value"
                           >
                             Default value
@@ -2331,7 +2433,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2358,7 +2460,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Default value"
@@ -2370,7 +2472,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                               value="test"
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="default_value"
                                 label="Default value"
                                 maxLength={250}
@@ -2392,7 +2494,7 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2411,10 +2513,10 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a default value if the parameter is not optional.
                               </span>
@@ -2436,6 +2538,57 @@ exports[`<ContentPackEditParameters /> should render a form for edition 1`] = `
 `;
 
 exports[`<ContentPackEditParameters /> should render with empty parameters 1`] = `
+.c0 {
+  color: #1f1f1f;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.c1 {
+  color: #1f1f1f;
+  background-color: #fff;
+  border-color: #cdcdcd;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::-moz-placeholder {
+  color: #9b9b9b;
+}
+
+.c1:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+.c1::placeholder {
+  color: #9b9b9b;
+}
+
+.c1:focus {
+  border-color: #6386c9;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(99,134,201,0.4);
+}
+
+.c1[disabled],
+.c1[readonly],
+fieldset[disabled] .c1 {
+  background-color: #cdcdcd;
+}
+
+.c1 ~ .form-control-feedback.glyphicon {
+  display: none;
+}
+
+.c2 {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #838383;
+}
+
 <ContentPackEditParameter
   onUpdateParameter={[Function]}
   parameters={Array []}
@@ -2507,12 +2660,12 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="title"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -2523,7 +2676,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2542,11 +2695,11 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="title"
                           >
                             Title
@@ -2583,7 +2736,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2611,7 +2764,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Title"
@@ -2624,7 +2777,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="title"
                                 label="Title"
                                 maxLength={250}
@@ -2647,7 +2800,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2666,10 +2819,10 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a descriptive title for this content pack.
                               </span>
@@ -2740,12 +2893,12 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="name"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -2756,7 +2909,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -2775,11 +2928,11 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="name"
                           >
                             Name
@@ -2816,7 +2969,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2844,7 +2997,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Name"
@@ -2857,7 +3010,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="name"
                                 label="Name"
                                 maxLength={250}
@@ -2880,7 +3033,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -2899,10 +3052,10 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 This is used as the parameter reference and must not contain a space.
                               </span>
@@ -2973,12 +3126,12 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="description"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -2989,7 +3142,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -3008,11 +3161,11 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="description"
                           >
                             Description
@@ -3049,7 +3202,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3077,7 +3230,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Description"
@@ -3090,7 +3243,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="description"
                                 label="Description"
                                 maxLength={250}
@@ -3113,7 +3266,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3132,10 +3285,10 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a description explaining what will be done with this parameter.
                               </span>
@@ -3206,12 +3359,12 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="type"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -3222,7 +3375,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -3241,11 +3394,11 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="type"
                           >
                             Value Type
@@ -3283,7 +3436,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3310,7 +3463,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="select"
                               disabled={false}
                               inputRef={[Function]}
@@ -3323,7 +3476,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                               value="string"
                             >
                               <select
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 disabled={false}
                                 id="type"
                                 label="Value Type"
@@ -3367,7 +3520,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3386,10 +3539,10 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give the type of the parameter.
                               </span>
@@ -3459,12 +3612,12 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
               >
                 <FormGroup
                   bsClass="form-group"
-                  className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc"
+                  className=""
                   controlId="default_value"
                   validationState={null}
                 >
                   <div
-                    className="FormGroup__StyledFormGroup-sc-1wv4cm9-0 gcTkZc form-group"
+                    className="form-group"
                   >
                     <ControlLabel>
                       <StyledComponent
@@ -3475,7 +3628,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                             "componentStyle": ComponentStyle {
                               "componentId": "ControlLabel-sc-1edmum5-0",
                               "isStatic": false,
-                              "lastClassName": "hCskeX",
+                              "lastClassName": "c0",
                               "rules": Array [
                                 [Function],
                               ],
@@ -3494,11 +3647,11 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                       >
                         <ControlLabel
                           bsClass="control-label"
-                          className="ControlLabel-sc-1edmum5-0 hCskeX"
+                          className="c0"
                           srOnly={false}
                         >
                           <label
-                            className="ControlLabel-sc-1edmum5-0 hCskeX control-label"
+                            className="c0 control-label"
                             htmlFor="default_value"
                           >
                             Default value
@@ -3534,7 +3687,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "FormControl-sc-1amoaox-0",
                                   "isStatic": false,
-                                  "lastClassName": "fdBWEX",
+                                  "lastClassName": "c1",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3561,7 +3714,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <FormControl
                               bsClass="form-control"
-                              className="FormControl-sc-1amoaox-0 fdBWEX"
+                              className="c1"
                               componentClass="input"
                               inputRef={[Function]}
                               label="Default value"
@@ -3573,7 +3726,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                               value=""
                             >
                               <input
-                                className="FormControl-sc-1amoaox-0 fdBWEX form-control"
+                                className="c1 form-control"
                                 id="default_value"
                                 label="Default value"
                                 maxLength={250}
@@ -3595,7 +3748,7 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                                 "componentStyle": ComponentStyle {
                                   "componentId": "HelpBlock-i8is92-0",
                                   "isStatic": false,
-                                  "lastClassName": "kxWRDS",
+                                  "lastClassName": "c2",
                                   "rules": Array [
                                     [Function],
                                   ],
@@ -3614,10 +3767,10 @@ exports[`<ContentPackEditParameters /> should render with empty parameters 1`] =
                           >
                             <HelpBlock
                               bsClass="help-block"
-                              className="HelpBlock-i8is92-0 kxWRDS"
+                              className="c2"
                             >
                               <span
-                                className="HelpBlock-i8is92-0 kxWRDS help-block"
+                                className="c2 help-block"
                               >
                                 Give a default value if the parameter is not optional.
                               </span>
