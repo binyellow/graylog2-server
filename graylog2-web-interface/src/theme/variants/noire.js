@@ -2,6 +2,28 @@ import chroma from 'chroma-js';
 
 import { darken, lighten } from './util';
 
+// --blue: #375a7f;
+// --indigo: #6610f2;
+// --purple: #6f42c1;
+// --pink: #e83e8c;
+// --red: #E74C3C;
+// --orange: #fd7e14;
+// --yellow: #F39C12;
+// --green: #00bc8c;
+// --teal: #20c997;
+// --cyan: #3498DB;
+// --white: #fff;
+// --gray: #888;
+// --gray-dark: #303030;
+// --primary: #375a7f;
+// --secondary: #444;
+// --success: #00bc8c;
+// --info: #3498DB;
+// --warning: #F39C12;
+// --danger: #E74C3C;
+// --light: #adb5bd;
+// --dark: #303030;
+
 const brand = {
   primary: '#ff3633',
   secondary: '#fff',
@@ -9,31 +31,29 @@ const brand = {
 };
 
 const global = {
-  background: '#e8e8e8',
-  contentBackground: '#fff',
-  link: '#702785',
-  textAlt: '#fff',
-  textDefault: '#1f1f1f',
+  background: '#222',
+  contentBackground: '#303030',
+  link: '#00bc8c',
+  textAlt: '#888',
+  textDefault: '#fff',
 };
 
 global.linkHover = chroma(global.link).darken(1).hex();
 
 const grayScale = chroma.scale([global.textDefault, global.textAlt]).colors(10);
 const gray = {};
-
 grayScale.forEach((tint, index) => {
   const key = (index + 1) * 10;
-
   gray[key] = tint;
 });
 
 const variant = {
-  danger: '#ad0707',
-  default: '#1f1f1f',
-  info: '#0063be',
-  primary: '#702785',
-  success: '#00ae42',
-  warning: '#ffd200',
+  danger: '#E74C3C',
+  default: '#adb5bd',
+  info: '#3498DB',
+  primary: '#375a7f',
+  success: '#00bc8c',
+  warning: '#F39C12',
   lightest: {},
   lighter: {},
   light: {},
