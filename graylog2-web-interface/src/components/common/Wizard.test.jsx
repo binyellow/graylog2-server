@@ -1,11 +1,11 @@
+import 'helpers/mocking/react-dom_mock';
+
 import React from 'react';
 import { mount } from 'wrappedEnzyme';
 import styled from 'styled-components';
 import { enzymeFind } from 'styled-components/test-utils';
 
 import { Nav } from 'components/graylog';
-import 'helpers/mocking/react-dom_mock';
-
 import Wizard from 'components/common/Wizard';
 
 describe('<Wizard />', () => {
