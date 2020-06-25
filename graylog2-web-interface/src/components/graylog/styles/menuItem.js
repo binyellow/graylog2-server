@@ -2,6 +2,8 @@ import { css } from 'styled-components';
 
 const menuItemStyles = css(({ theme }) => css`
   .dropdown-menu {
+    background-color: ${theme.colors.global.contentBackground};
+
     > li > a {
       color: ${theme.colors.global.textDefault};
 

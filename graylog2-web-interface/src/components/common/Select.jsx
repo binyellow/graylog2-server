@@ -383,7 +383,7 @@ class Select extends React.Component<Props, State> {
         primary25: theme.colors.variant.lightest.default,
         danger: theme.colors.variant.darker.info,
         dangerLight: theme.colors.variant.lighter.info,
-        neutral0: theme.colors.gray[100],
+        neutral0: theme.colors.global.inputBackground,
         neutral5: theme.colors.gray[90],
         neutral10: theme.colors.variant.lightest.info,
         neutral20: theme.colors.gray[80],
