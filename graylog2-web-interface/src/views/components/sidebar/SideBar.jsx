@@ -51,6 +51,7 @@ class SideBar extends React.Component<Props, State> {
 
   constructor(props: Props) {
     super(props);
+
     this.state = {
       selectedKey: undefined,
       open: false,
@@ -138,7 +139,7 @@ class SideBar extends React.Component<Props, State> {
               {open && <ContentOverlay onClick={this.toggleOpen} />}
               <SidebarHeader role="presentation" onClick={this.toggleOpen} hasTitle={!!title} open={open}>
                 {open && title && <Headline title={title}>{title}</Headline>}
-                <ToggleIcon><Icon name={toggleIcon} /></ToggleIcon>
+                <ToggleIcon open={open}><Icon name={toggleIcon} /></ToggleIcon>
               </SidebarHeader>
               <HorizontalRuler />
               <NavItem isSelected={open && selectedKey === 'viewDescription'}

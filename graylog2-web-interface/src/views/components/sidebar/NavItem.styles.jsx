@@ -14,8 +14,9 @@ export const Title: StyledComponent<StyleProps, ThemeInterface, HTMLDivElement> 
   align-items: center;
   cursor: pointer;
   position: relative;
-  color: ${isSelected ? theme.colors.variant.light.danger : 'inherit'};
-  background: ${isSelected ? theme.colors.gray[10] : 'tranparent'};
+  /* color: ${isSelected ? theme.colors.variant.dark.primary : 'inherit'}; */
+  color: ${isSelected ? theme.utils.readableColor(theme.colors.gray[90], theme.colors.variant.darkest.primary, theme.colors.variant.lightest.primary) : 'inherit'};
+  background: ${isSelected ? theme.colors.gray[90] : 'transparent'};
   ${((isSelected && expandRight) && css`
 
     &::after {
@@ -51,8 +52,8 @@ export const Content: StyledComponent<StyleProps, ThemeInterface, HTMLDivElement
   color: ${theme.utils.readableColor(theme.colors.global.contentBackground)};
   background: ${theme.colors.global.contentBackground};
   box-shadow:
-    inset 0 13px 5px -10px ${theme.colors.gray[80]},
-    inset 0 -13px 5px -10px ${theme.colors.gray[80]};
+    inset 0 13px 5px -10px rgba(0, 0, 0, 0.25),
+    inset 0 -13px 5px -10px rgba(0, 0, 0, 0.25);
   ${(isSelected ? css`
     padding: 20px;
   ` : css`

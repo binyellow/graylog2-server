@@ -5,8 +5,9 @@ import chroma from 'chroma-js';
 
 const Navbar = styled(BootstrapNavbar)(({ theme }) => css`
   &.navbar-default {
-    background-color: ${theme.colors.gray[90]};
-    border-color: ${theme.colors.gray[80]};
+    background-color: ${theme.colors.global.inputBackground};
+    border: 0;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
 
     .navbar-brand {
       color: ${theme.colors.variant.info};
