@@ -37,6 +37,8 @@ const Navbar = styled(BootstrapNavbar)(({ theme }) => css`
       }
 
       > .active > a {
+        color: ${theme.colors.variant.dark.info};
+
         &,
         &:hover,
         &:focus {
@@ -55,6 +57,7 @@ const Navbar = styled(BootstrapNavbar)(({ theme }) => css`
       }
 
       > .open > a {
+        color:
         &,
         &:hover,
         &:focus {
