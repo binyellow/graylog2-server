@@ -62,55 +62,64 @@ const variantRowStyles = css(({ theme }) => {
   `;
 });
 
-const Table = styled(BootstrapTable)(({ theme }) => {
-  return css`
+const tableCss = css(({ theme }) => css`
+  background-color: ${theme.colors.global.tableBackground};
+
+  &.table > thead > tr > th,
+  &.table > tbody > tr > th,
+  &.table > tfoot > tr > th,
+  &.table > thead > tr > td,
+  &.table > tbody > tr > td,
+  &.table > tfoot > tr > td {
+    border-top-color: ${theme.colors.global.tableBackgroundAlt};
+  }
+
+  &.table > thead > tr > th {
+    border-bottom-color: ${theme.colors.global.tableBackgroundAlt};
+  }
+
+  &.table > tbody + tbody {
+    border-top-color: ${theme.colors.global.tableBackgroundAlt};
+  }
+
+  .table .table {
     background-color: ${theme.colors.global.tableBackground};
+  }
 
-    &.table > thead > tr > th,
-    &.table > tbody > tr > th,
-    &.table > tfoot > tr > th,
-    &.table > thead > tr > td,
-    &.table > tbody > tr > td,
-    &.table > tfoot > tr > td {
-      border-top-color: ${theme.colors.global.tableBackgroundAlt};
-    }
+  &.table-bordered {
+    border-color: ${theme.colors.global.tableBackgroundAlt};
+  }
 
-    &.table > thead > tr > th {
-      border-bottom-color: ${theme.colors.global.tableBackgroundAlt};
-    }
+  &.table-bordered > thead > tr > th,
+  &.table-bordered > tbody > tr > th,
+  &.table-bordered > tfoot > tr > th,
+  &.table-bordered > thead > tr > td,
+  &.table-bordered > tbody > tr > td,
+  &.table-bordered > tfoot > tr > td {
+    border-color: ${theme.colors.global.tableBackgroundAlt};
+  }
 
-    &.table > tbody + tbody {
-      border-top-color: ${theme.colors.global.tableBackgroundAlt};
-    }
+  &.table-striped > tbody > tr {
+    background-color: ${theme.colors.global.tableBackground};
+    transition: background-color 150ms ease-in-out;
+  }
 
-    .table .table {
-      background-color: ${theme.colors.gray[100]};
-    }
+  &.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: ${theme.colors.global.tableBackgroundAlt};
+  }
 
-    &.table-bordered {
-      border-color: ${theme.colors.global.tableBackgroundAlt};
-    }
+  &.table-hover > tbody > tr:hover {
+    background-color: ${theme.colors.variant.dark.default};
+  }
 
-    &.table-bordered > thead > tr > th,
-    &.table-bordered > tbody > tr > th,
-    &.table-bordered > tfoot > tr > th,
-    &.table-bordered > thead > tr > td,
-    &.table-bordered > tbody > tr > td,
-    &.table-bordered > tfoot > tr > td {
-      border-color: ${theme.colors.global.tableBackgroundAlt};
-    }
+  ${variantRowStyles};
+`);
 
-    &.table-striped > tbody > tr:nth-of-type(odd) {
-      background-color: ${theme.colors.gray[90]};
-    }
-
-    &.table-hover > tbody > tr:hover {
-      background-color: ${theme.colors.global.tableBackgroundAlt};
-    }
-
-    ${variantRowStyles};
-  `;
-});
+const Table = styled(BootstrapTable)`
+  ${tableCss}
+`;
 
 /** @component */
 export default Table;
+
+export { tableCss };
