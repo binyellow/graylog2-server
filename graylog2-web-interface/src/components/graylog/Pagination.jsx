@@ -3,24 +3,23 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line no-restricted-imports
 import { Pagination as BootstrapPagination } from 'react-bootstrap';
 import { Pagination as DeprecatedPagination } from '@react-bootstrap/pagination';
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import deprecationNotice from 'util/deprecationNotice';
 
-export const paginationStyles = css(({ theme }) => css`
+const paginationStyles = css(({ theme }) => css`
   &.pagination {
     > li {
       > a,
       > span {
-        color: ${theme.utils.readableColor(theme.colors.global.contentBackground)};
-        background-color: ${theme.colors.global.contentBackground};
+        color: ${theme.utils.readableColor(theme.colors.global.background)};
+        background-color: ${theme.colors.global.background};
         border-color: ${theme.colors.gray[80]};
 
         &:hover,
         &:focus {
-          color: ${theme.colors.variant.dark.primary};
-          background-color: ${theme.colors.gray[90]};
-          border-color: ${theme.colors.gray[80]};
+          color: ${theme.utils.readableColor(theme.colors.gray[10])};
+          background-color: ${theme.colors.gray[10]};
         }
       }
     }
@@ -30,9 +29,8 @@ export const paginationStyles = css(({ theme }) => css`
       &,
       &:hover,
       &:focus {
-        color: ${theme.colors.variant.dark.primary};
-        background-color: ${theme.colors.gray[90]};
-        border-color: ${theme.colors.gray[80]};
+        background-color: ${theme.colors.variant.light.info};
+        color: ${theme.utils.readableColor(theme.colors.variant.light.info)};
       }
     }
 
@@ -51,6 +49,14 @@ export const paginationStyles = css(({ theme }) => css`
   }
 `);
 
+const StyledPagination = styled(BootstrapPagination)`
+  ${paginationStyles}
+`;
+
+const StyledDeprecatedPagination = styled(DeprecatedPagination)`
+  ${paginationStyles}
+`;
+
 const Pagination = ({
   activePage,
   children,
@@ -67,18 +73,18 @@ const Pagination = ({
     }, []);
 
     return (
-      <DeprecatedPagination activePage={activePage}
-                            first={first}
-                            last={last}
-                            maxButtons={maxButtons}
-                            next={next}
-                            prev={prev}
-                            {...props} />
+      <StyledDeprecatedPagination activePage={activePage}
+                                  first={first}
+                                  last={last}
+                                  maxButtons={maxButtons}
+                                  next={next}
+                                  prev={prev}
+                                  {...props} />
     );
   }
 
   return (
-    <BootstrapPagination {...props}>{children}</BootstrapPagination>
+    <StyledPagination {...props}>{children}</StyledPagination>
   );
 };
 
