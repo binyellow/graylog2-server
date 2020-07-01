@@ -74,7 +74,7 @@ public abstract class ElasticsearchInstance extends ExternalResource {
     private ElasticsearchContainer buildContainer(String image, Network network) {
         return new ElasticsearchContainer(image)
                 .withReuse(true)
-                .withEnv("ES_JAVA_OPTS", "-Xms512m -Xmx512m")
+                .withEnv("ES_JAVA_OPTS", "-Xms2G -Xmx2G")
                 .withEnv("discovery.type", "single-node")
                 .withEnv("action.auto_create_index", ".watches,.triggered_watches,.watcher-history-*")
                 .withNetwork(network)
