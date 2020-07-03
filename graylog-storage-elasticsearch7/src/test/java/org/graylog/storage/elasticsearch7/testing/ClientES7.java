@@ -11,14 +11,12 @@ import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.admin.indices.
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.admin.indices.template.delete.DeleteIndexTemplateRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.bulk.BulkRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.index.IndexRequest;
-import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.support.IndicesOptions;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.action.support.WriteRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.Request;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.Response;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.CloseIndexRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.CreateIndexRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.GetIndexRequest;
-import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.GetIndexResponse;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.GetIndexTemplatesRequest;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.GetIndexTemplatesResponse;
 import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.indices.IndexTemplateMetaData;
@@ -28,6 +26,8 @@ import org.graylog.storage.elasticsearch7.ElasticsearchClient;
 import org.graylog.testing.elasticsearch.BulkIndexRequest;
 import org.graylog.testing.elasticsearch.Client;
 import org.graylog2.shared.bindings.providers.ObjectMapperProvider;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -35,6 +35,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ClientES7 implements Client {
+    private static final Logger LOG = LoggerFactory.getLogger(ClientES7.class);
     private final ElasticsearchClient client;
     private final ObjectMapper objectMapper;
 
@@ -45,6 +46,7 @@ public class ClientES7 implements Client {
 
     @Override
     public void createIndex(String index, int shards, int replicas) {
+        LOG.info("Creating index " + index);
         final CreateIndexRequest createIndexRequest = new CreateIndexRequest(index);
         createIndexRequest.settings(
                 Settings.builder()
@@ -174,6 +176,7 @@ public class ClientES7 implements Client {
 
     @Override
     public void cleanUp() {
+        LOG.info("Removing indices: " + String.join(",", existingIndices()));
         deleteIndices(existingIndices());
         deleteTemplates(existingTemplates());
         refreshNode();
@@ -188,9 +191,25 @@ public class ClientES7 implements Client {
     }
 
     private String[] existingIndices() {
-        final GetIndexRequest getIndexRequest = new GetIndexRequest("*");
-        getIndexRequest.indicesOptions(IndicesOptions.lenientExpandOpen());
-        final GetIndexResponse result = client.execute((c, requestOptions) -> c.indices().get(getIndexRequest, requestOptions));
-        return result.getIndices();
+        final Request request = new Request("GET", "/_cat/indices");
+        request.addParameter("format", "json");
+        request.addParameter("h", "index");
+
+        final Response response = client.execute((c, requestOptions) -> {
+            request.setOptions(requestOptions);
+            return c.getLowLevelClient().performRequest(request);
+        });
+
+        final JsonNode jsonResponse;
+        try {
+            jsonResponse = objectMapper.readTree(response.getEntity().getContent());
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+
+        return Streams.stream(jsonResponse.elements())
+                .map(index -> index.path("index").asText())
+                .distinct()
+                .toArray(String[]::new);
     }
 }
