@@ -12,6 +12,7 @@ import org.graylog.shaded.elasticsearch7.org.elasticsearch.client.RestHighLevelC
 import javax.inject.Inject;
 import java.io.IOException;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -32,8 +33,13 @@ public class CatApi {
         return perform(c, request, new TypeReference<List<NodeResponse>>() {});
     }
 
-    public Set<String> indices(RestHighLevelClient c, String indexPattern, Collection<String> status, RequestOptions requestOptions) throws IOException {
-        final Request request = request("GET", "indices/" + indexPattern, requestOptions);
+    public Set<String> indices(RestHighLevelClient c, String index, Collection<String> status, RequestOptions requestOptions) throws IOException {
+        return indices(c, Collections.singleton(index), status, requestOptions);
+    }
+
+    public Set<String> indices(RestHighLevelClient c, Collection<String> indices, Collection<String> status, RequestOptions requestOptions) throws IOException {
+        final String joinedIndices = String.join(",", indices);
+        final Request request = request("GET", "indices/" + joinedIndices, requestOptions);
         request.addParameter("h", "index,status");
         request.addParameter("expand_wildcards", "all");
         request.addParameter("s", "index,status");
