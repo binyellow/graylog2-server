@@ -41,6 +41,7 @@ import io.searchbox.indices.template.PutTemplate;
 import org.graylog.storage.elasticsearch6.jest.JestUtils;
 import org.graylog.testing.elasticsearch.BulkIndexRequest;
 import org.graylog.testing.elasticsearch.Client;
+import org.graylog2.indexer.IndexMapping;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -112,8 +113,7 @@ public class ClientES6 implements Client {
         executeWithExpectedSuccess(addAliasRequest, "failed to add alias " + alias + " for index " + indexName);
     }
 
-    @Override
-    public JsonNode getMapping(String... indices) {
+    private JsonNode getMapping(String... indices) {
         final GetMapping getMapping = new GetMapping.Builder().addIndex(Arrays.asList(indices)).build();
 
         final JestResult response = executeWithExpectedSuccess(getMapping, "");
@@ -131,7 +131,7 @@ public class ClientES6 implements Client {
     }
 
     @Override
-    public void putTemplate(String templateName, Object source) {
+    public void putTemplate(String templateName, Map<String, Object> source) {
         final PutTemplate templateRequest = new PutTemplate.Builder(templateName, source).build();
         executeWithExpectedSuccess(templateRequest, "failed to put template " + templateName);
     }
@@ -235,5 +235,21 @@ public class ClientES6 implements Client {
 
     private String[] metadataFieldNamesFor(JsonNode result, String templates) {
         return toArray(result.get("metadata").get(templates).fieldNames(), String.class);
+    }
+
+    @Override
+    public boolean isSourceEnabled(String testIndexName) {
+        final JsonNode indexMappings = getMapping(testIndexName);
+        final JsonNode mapping = indexMappings.path(testIndexName).path("mappings").path(IndexMapping.TYPE_MESSAGE);
+
+        return mapping.path("_source").path("enabled").asBoolean();
+    }
+
+    @Override
+    public String fieldType(String testIndexName, String source) {
+        final JsonNode indexMappings = getMapping(testIndexName);
+        final JsonNode mapping = indexMappings.path(testIndexName).path("mappings").path(IndexMapping.TYPE_MESSAGE);
+
+        return mapping.path("properties").path("source").path("type").asText();
     }
 }
